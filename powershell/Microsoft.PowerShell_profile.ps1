@@ -1,16 +1,19 @@
 
-# copy if absent
-If (-not (test-path $profile)) { 
- cp ~\git\configurations\powershell\Microsoft.PowerShell_profile.ps1 ~\documents\windowspowershell\
- new-item -path ~\documents\windowspowershell\private -type directory
-}
+Write-Host -ForegroundColor Yellow "
+        (
+         ) )
+      ) ( (
+    _(_____)_
+ .-'---------|  
+( C|   wtf   |
+ '-. o'clock |
+   '_________'
+    '-------'
+"
+#Set-Prompt
 
-# add default scripts to env:path
-$env:path += ";~\git\configurations\powershell\scripts"
-$env:path += ";~\documents\windowspowershell\scripts"
-
-# create data variables
-#$erik = new-object -typename System.Object
+# imports
+import-module awspowershell 
+import-module pse.ess.aws -DisableNameChecking
 
 
-# local changes
