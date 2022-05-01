@@ -13,7 +13,4 @@ Write-Host -ForegroundColor Yellow "
 #Set-Prompt
 
 # imports
-import-module awspowershell 
-import-module pse.ess.aws -DisableNameChecking
-
 
